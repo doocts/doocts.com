@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -37,6 +39,14 @@ module.exports = {
         langKeyDefault: 'en',
         useLangKeyLayout: false
       }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `lckyf8lezm7z`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
     },
   ],
 }
