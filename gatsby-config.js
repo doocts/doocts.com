@@ -46,6 +46,7 @@ module.exports = {
         spaceId: `lckyf8lezm7z`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
       },
     },
     {
@@ -62,9 +63,24 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/ // See below to configure properly
+          include: /images/ // See below to configure properly
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Noto Sans JP`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Lato`,
+            variants: [`400`, `900`]
+          },
+        ],
+      },
+    }
   ],
 }
