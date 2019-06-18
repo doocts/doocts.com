@@ -11,7 +11,7 @@ const Post = ({ data }) => {
       <SEO title={ title } />
       <div>
         <h1>{ title }</h1>
-        <div>{ content.content }</div>
+        <div dangerouslySetInnerHTML={{ __html: content.childMarkdownRemark.html }} />
         <Link to="/">Back to Home</Link>
       </div>
     </Layout>
@@ -27,7 +27,9 @@ export const pageQuery = graphql`
       title
       slug
       content {
-        content
+        childMarkdownRemark {
+          html
+        }
       }
     }
   }
