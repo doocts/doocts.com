@@ -12,7 +12,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem 0 2rem;
+  padding: 6rem 1rem 2rem;
   background: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0 91.2319C0.758362 89.8717 1.90898 87.7228 4.01766 85.4787C6.70877 82.6153 9.45695 81.2021 11.316 80.9269C16.2418 80.1965 18.9971 86.8336 23.6305 92.1476C31.4328 101.098 39.2042 100.156 42.3637 99.7692C43.9922 99.5734 60.6048 97.1599 63.9972 77.5924C67.606 56.7705 53.1852 34.2021 56.8177 19.4246C59.3115 9.28357 68.6282 7.45226 74.814 11.5383C79.9775 14.9469 80.5267 20.9171 84.8938 22.018C92.0495 23.8282 100.515 10.3368 99.9755 0H0V91.2319Z" fill="%2348629a"/></svg>') no-repeat 0 0 / 60vw 20vh ${Settings.colors.keyColor};
 
   &::before {

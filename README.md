@@ -95,3 +95,14 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e825b625-dbc4-4c31-b1d7-5fe644485275/deploy-status)](https://app.netlify.com/sites/doocts/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Memo
+```
+cd
+git submodule add https://github.com/doocts/doocts.com.git src/modules/
+git commit -m "Add submodule"
+cd src/modules/
+git config core.sparsecheckout true
+echo src/components/ > ../../.git/modules/src/modules/info/sparse-checkout
+git read-tree -m -u HEAD
+```

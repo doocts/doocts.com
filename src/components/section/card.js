@@ -82,6 +82,7 @@ const Title = styled.h1`
 const Date = styled.div`
   font-size: ${Settings.fonts.fontSizeSmall};
   color: ${Settings.colors.textClearColor};
+  text-align: right;
 `;
 
 
